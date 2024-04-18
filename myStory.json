@@ -1,0 +1,137 @@
+{
+    "Title": "Found Again",
+    "Credits": "Created by Ryo Safadi. Template by Adam Smith.",
+    "InitialLocation": "Surface",
+    "Locations": {
+        "Surface": {
+            "Body": "A clear sky, a soft breeze. A perfect day, some may say.<br>And yet, the pond that lies before you, the one you've known all your life, has turned dark and gray. You've been avoiding it, fearing what lies below.<br>Now, it is time to face the truth.",
+            "Choices": [
+                {
+                    "Text": "Plunge",
+                    "Target": "Underwater"
+                }
+            ]
+        },
+        "Underwater": {
+            "Body": "You jump in.<br>Now fully submerged, you open your eyes and look around. You are shrouded in darkness, with no hint as to what is corrupting your beloved pond.<br>You must search for an answer.",
+            "Choices": [
+                {
+                    "Text": "Swim Left",
+                    "Target": "Plants"
+                },
+                {
+                    "Text": "Swim Down",
+                    "Target": "Tombstone"
+                },
+                {
+                    "Text": "Swim Right",
+                    "Target": "Catfish"
+                }
+            ]
+        },
+        "Plants": {
+            "Body": "You come across what appears to be a forest of vines.<br>Upon closer inspection, you realize that these are the stems of the water lilies that once bloomed here.<br>Sinking between the stems is the last lily flower; its pink color, fading.",
+            "Body2": "You come across what appears to be a forest of vines.<br>Upon closer inspection, you realize that these are the stems of the water lilies that once bloomed here.",
+            "MechanismMsg": "You pick up the flower.",
+            "Choices": [
+                {
+                    "Text": "Take Flower",
+                    "Target": "Plants",
+                    "Mechanism": "true",
+                    "Key": "Place Flower"
+                },
+                {
+                    "Text": "Swim Down",
+                    "Target": "Mussels"
+                },
+                {
+                    "Text": "Swim Right",
+                    "Target": "Darkness"
+                }
+            ]
+        },
+        "Catfish": {
+            "Body": "You get swarmed by a school of Catfish.<br>However, they don't seem to notice you. They continue slowly moving along, devoid of any destination.",
+            "Choices": [
+                {
+                    "Text": "Swim Left",
+                    "Target": "Darkness"
+                },
+                {
+                    "Text": "Swim Down",
+                    "Target": "Watch"
+                }
+            ]
+        },
+        "Darkness": {
+            "Body": "Darkness, with nothing in sight.",
+            "Choices": [
+                {
+                    "Text": "Swim Left",
+                    "Target": "Plants"
+                },
+                {
+                    "Text": "Swim Right",
+                    "Target": "Catfish"
+                }
+            ]
+        },
+        "Mussels": {
+            "Body": "The ocean floor is covered in mussels and lined with water-thyme. They are completely still, as if frozen in time.",
+            "Choices": [
+                {
+                    "Text": "Swim Up",
+                    "Target": "Plants"
+                },
+                {
+                    "Text": "Swim Right",
+                    "Target": "Tombstone"
+                }
+            ]
+        },
+        "Watch": {
+            "Body": "You see something resting on the sediment.<br>It's a gold watch, but it doesn't seem to be working.",
+            "MechanismMsg": "After gently shaking the watch, the second hand starts to tick!<br>But, it probably won't last long.",
+            "Choices": [
+                {
+                    "Text": "Gently Shake Watch",
+                    "Target": "Watch",
+                    "Mechanism": "true"
+                },
+                {
+                    "Text": "Swim Left",
+                    "Target": "Tombstone"
+                },
+                {
+                    "Text": "Swim Up",
+                    "Target": "Catfish"
+                }
+            ]
+        },
+        "Tombstone": {
+            "Body": "There is some sort of stone tablet half-buried in ground. You run your fingers along it, feeling the texture of the engravings.<br>It is too dark to read, but maybe if you had a light...",
+            "Choices": [
+                {
+                    "Text": "Place Flower",
+                    "Target": "End",
+                    "Lock": "true"
+                },
+                {
+                    "Text": "Swim Left",
+                    "Target": "Mussels"
+                },
+                {
+                    "Text": "Swim Up",
+                    "Target": "Darkness"
+                },
+                {
+                    "Text": "Swim Right",
+                    "Target": "Watch"
+                }
+            ]
+        },
+        "End": {
+            "Body": "You place the flower next to the stone.<br>It's color returns instantly, as if that's where it has always belonged.<br>The flower begins to glow. A sudden flash of light blinds you.<br>You open your eyes once again, but this time, the water is clear. You look around at all the wildlife, now restored. Your pond has returned to it's former glory.<br>You look at the stone, it's engraving now visible. It has but one word, a name.<br>The burial place of someone once loved. Their soul has become the source of life for this habitat.<br>Now, their memory lives on through you and your pond."
+        }
+    }
+}
